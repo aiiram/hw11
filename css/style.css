@@ -17,7 +17,7 @@
 
 
 *,
-* ::before,
+*::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
@@ -43,33 +43,10 @@ a {
 .container {
   width: min(100% - var(--gap) * 2, var(--container-width);
       margin-inline: auto;
+      background-color: blue;
   }
 
-  .btn {}
 
-  .btn--primary {}
-
-  .header {}
-
-  .navbar-info {}
-
-  .navbar-info__container {}
-
-  .container {}
-
-  .logo {}
-
-  .logo__link {}
-
-  .logo__image {}
-
-  .logo__title {}
-
-  .feedback {}
-
-  .feedback__phone {}
-
-  .feedback__button {}
 
   .navbar-primary {
     background-color: red;
@@ -84,13 +61,11 @@ a {
     gap: var(--gap);
   }
 
-  .navbar-primary__item {}
-
   .navbar-primary__link {
     display: block;
     font-size: 1rem;
     padding: var(--gap-xs);
-    background-color:;
+    background-color:red;
   }
 
   .navbar-secondary {
@@ -111,7 +86,3 @@ a {
     display: block;
     padding: 7px var(--gap-xs);
   }
-
-  .main {}
-
-  .footer {}
