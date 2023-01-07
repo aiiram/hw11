@@ -52,6 +52,10 @@ a {
 
 .btn {
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
   min-width: 170px;
   min-height: 40px;
   padding: 0.25em 1em;
@@ -64,6 +68,12 @@ a {
 .btn--primary {
   background-color: var(--color-white);
   border-color: var(--color-accent);
+}
+
+.btn--secondary {
+  letter-spacing: 0.05em;
+  background-color: var(--color-accent);
+  color: var(--color-white);
 }
 
 .header {
@@ -156,4 +166,35 @@ a {
 .navbar-secondary__link {
   display: block;
   padding: 7px var(--gap-xs);
+}
+
+.main {}
+
+.hero {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  padding: 192px 0;
+}
+
+
+
+.hero__content {}
+
+.hero__title {
+  font-size: 48px;
+  line-height: var(--line-height);
+  margin: 0;
+}
+
+.hero__description {
+  line-height: 1.43;
+}
+
+.hero__button {}
+
+.btn {}
+
+.btn--primary {
+  background-color: var(--color-white);
+  border-color: var(--color-accent);
 }
