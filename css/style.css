@@ -14,7 +14,8 @@
 
   --font-family: 'Roboto', sans-serif;
   --font-size: 16px;
-  --line-height: 1.18;
+  --line-height-sm: 1.167;
+  --line-height-lg: 1.43;
   --letter-spacing: 0.1em;
 }
 
@@ -74,6 +75,15 @@ a {
   letter-spacing: 0.05em;
   background-color: var(--color-accent);
   color: var(--color-white);
+}
+
+.btn--sm {
+
+  min-width: 130px;
+  min-height: 35px;
+  border-width: 0;
+  border-radius: 30px;
+
 }
 
 .header {
@@ -178,6 +188,7 @@ a {
   background-repeat: no-repeat;
   color: var(--color-white);
   padding: 192px 0;
+  margin-bottom: 80px;
 }
 
 
@@ -198,7 +209,7 @@ a {
 
 .hero__description {
 
-  line-height: 1.43;
+  line-height: var(--line-height-lg);
   margin-bottom: 4px;
 }
 
@@ -216,3 +227,62 @@ a {
     background-size: cover;
   }
 }
+
+.offers {
+  margin-bottom: 100px;
+}
+
+
+.offers__title {
+
+
+  font-size: 1.5rem;
+  line-height: var(--line-height-sm);
+  margin-bottom: var(--gap-xl);
+}
+
+.offers_content {
+  display: flex;
+  gap: var(--gap-lg);
+
+}
+
+.offer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap);
+  text-align: center;
+  background-color: var(--color-white);
+  padding: 25px;
+  flex: 1;
+}
+
+.offer-item__title {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: var(--line-height-lg);
+
+}
+
+.offer-item__picture {
+  order: -1;
+}
+
+.offer-item__image {}
+
+.offer-item__price {
+  font-weight: 500;
+  font-size: 21px;
+  letter-spacing: 0.05em;
+  color: var(--color-black);
+}
+
+.offer-item__button {}
+
+.btn {}
+
+.btn--sm {}
+
+.footer {}
