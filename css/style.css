@@ -172,13 +172,23 @@ a {
 
 .hero {
   background-color: var(--color-accent);
+  background-image: url(../image/Rectangle.png);
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
   color: var(--color-white);
   padding: 192px 0;
 }
 
 
 
-.hero__content {}
+.hero__content {
+  display: flex;
+  gap: var(--gap-xl);
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 375px;
+}
 
 .hero__title {
   font-size: 48px;
@@ -187,14 +197,22 @@ a {
 }
 
 .hero__description {
+
   line-height: 1.43;
+  margin-bottom: 4px;
 }
 
 .hero__button {}
 
-.btn {}
+/* .btn {}
 
 .btn--primary {
   background-color: var(--color-white);
   border-color: var(--color-accent);
+} */
+
+@media (max-width: 1400px) {
+  .hero {
+    background-size: cover;
+  }
 }
