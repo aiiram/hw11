@@ -1,5 +1,6 @@
 :root {
   --color-gray: #333333;
+  --color-gray-light: #c4c4c4;
   --color-black: #000000;
   --color-white: #ffffff;
   --color-accent: #F13C6E;
@@ -44,6 +45,18 @@ a {
   color: inherit;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .container {
   width: min(100% - var(--gap) * 2, var(--container-width));
@@ -103,9 +116,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: var(--gap);
 }
-
-.logo {}
 
 .logo__link {
   display: flex;
@@ -123,7 +135,7 @@ a {
 .feedback {
   display: flex;
   align-items: center;
-  gap: var(--gap-xl);
+  gap: var(--gap-xs) var(--gap-xl);
 }
 
 .feedback__phone {
@@ -222,11 +234,6 @@ a {
   border-color: var(--color-accent);
 } */
 
-@media (max-width: 1400px) {
-  .hero {
-    background-size: cover;
-  }
-}
 
 .offers {
   margin-bottom: 100px;
@@ -243,6 +250,7 @@ a {
 
 .offers_content {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--gap-lg);
 
 }
@@ -279,48 +287,178 @@ a {
   color: var(--color-black);
 }
 
-/* .offer-item__button {}
 
-.btn {}
+.submit {
+  margin-bottom: 100px;
+  color: var(--color-white);
 
-.btn--sm {}
-
-.footer {} */
-
-.submit {}
+}
 
 .container {}
 
 .submit__title {}
 
-.visually-hidden {}
 
-.submit__content {}
 
-.subscribe {}
+.submit__content {
+  display: flex;
+  gap: var(--gap-lg);
+}
 
-.subscribe__content {}
+.subscribe {
+  background-color: var(--color-accent);
+  flex: 1;
+  padding: 25px var(--gap-xl);
+  background-image: url(../image/envelope.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 45px) 50%;
+}
 
-.subscribe__title {}
+.subscribe__content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 250px;
+}
 
-.subscribe_discription {}
+.subscribe__title {
+  font-size: 1.125rem;
+  line-height: var(--line-height-sm);
+}
 
-.subscribe__form {}
+.subscribe_discription {
+  font-size: 0.875rem;
+  line-height: var(--line-height-lg);
+}
 
-.subscribe__label {}
+.subscribe__form {
+  max-width: 225px;
+}
 
-.subscribe__input {}
+.subscribe__input {
+  font-size: 0.875rem;
+  padding: 0.25em 25px;
+  display: block;
+  width: 100%;
+  min-height: 35px;
+  background-color: var(--color-light);
+  border: none;
+  border-radius: 30px;
+}
 
-.our-ships {}
+.subscribe__input::placeholder {
+  color: #c4c4c4;
+}
 
-.our-shops__content {}
+.our-shops {
+  background-color: var(--color-accent);
+  flex: 1;
+  padding: 25px var(--gap-xl);
+  background-image: url(../image/car.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 45px) 50%;
+}
 
-.our-shops__title {}
 
-.our-shops__discription {}
+.our-shops__content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 250px;
+}
+
+.our-shops__title {
+  font-size: 1.125rem;
+  line-height: var(--line-height-sm);
+}
+
+.our-shops__discription {
+  font-size: 0.875rem;
+  line-height: var(--line-height-lg);
+}
 
 .our-shops__actions {}
 
-.our-shops__buttons {}
+.our-shops__buttons {
+  min-height: 35px;
+}
 
-.btn {}
+@media (max-width: 1400px) {
+  .hero {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .hero {
+    padding: 120px 0;
+  }
+
+  .offer-item {
+    flex-basis: 33%;
+  }
+
+  .subscribe__content {
+    max-width: 100%
+  }
+
+  .subscribe {
+    background-image: none;
+  }
+
+  .our-shops {
+    background-image: none;
+  }
+
+  .our-shops__content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-info__container {
+    flex-direction: column;
+  }
+
+  .hero {
+    padding: 80px 0;
+  }
+
+  .offer-item {
+    flex-basis: 100%;
+  }
+
+  .submit__content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .feedback {
+    flex-direction: column;
+  }
+
+  .navbar-secondary__link {
+    padding: 5px;
+  }
+
+  .navbar-primary__link {
+    padding: 5px;
+  }
+
+
+  .hero {
+    background-image: none;
+  }
+
+  .hero__content {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .offers__title {
+    text-align: center;
+  }
+}
