@@ -194,7 +194,7 @@ a {
 
 .hero {
   background-color: var(--color-accent);
-  background-image: url(../image/Rectangle.png);
+  background-image: url(../../image/Rectangle.png);
   background-size: contain;
   background-position: 50% 50%;
   background-repeat: no-repeat;
