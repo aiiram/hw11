@@ -279,10 +279,48 @@ a {
   color: var(--color-black);
 }
 
-.offer-item__button {}
+/* .offer-item__button {}
 
 .btn {}
 
 .btn--sm {}
 
-.footer {}
+.footer {} */
+
+.submit {}
+
+.container {}
+
+.submit__title {}
+
+.visually-hidden {}
+
+.submit__content {}
+
+.subscribe {}
+
+.subscribe__content {}
+
+.subscribe__title {}
+
+.subscribe_discription {}
+
+.subscribe__form {}
+
+.subscribe__label {}
+
+.subscribe__input {}
+
+.our-ships {}
+
+.our-shops__content {}
+
+.our-shops__title {}
+
+.our-shops__discription {}
+
+.our-shops__actions {}
+
+.our-shops__buttons {}
+
+.btn {}
