@@ -383,6 +383,100 @@ a {
   min-height: 35px;
 }
 
+.logotipe {
+  /* position: absolute;
+  width: 1110px;
+  height: 357px;
+  left: 405px;
+  top: 1775px;
+  background-color: var(--color-white);
+  display: grid; */
+
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 277.5px);
+  width: 1110px;
+  height: 357px;
+  background-color: var(--color-light);
+  margin-bottom: 80px;
+}
+
+.grid-item {
+  background-color: var(--color-white);
+  padding: 35px 64px 35px 63px;
+  font-size: 149px;
+  text-align: center;
+  margin: 1px;
+
+
+}
+
+.footer {
+
+  width: 1920px;
+  height: 557px;
+
+}
+
+.category {
+
+  width: 255px;
+  height: 253px;
+  left: 384px;
+  top: 2776px;
+
+
+}
+
+.container {}
+
+.category-title {
+
+  width: 99px;
+  height: 40px;
+  left: 405px;
+  top: 2782px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140.62%;
+  /* or 22px */
+
+
+  color: #000000;
+
+
+}
+
+.category-titles {
+
+
+  position: absolute;
+  width: 82px;
+  height: 158px;
+  left: 405px;
+  top: 2877px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+
+
+  color: #828282;
+
+}
+
+.category-title__link {}
+
+
 @media (max-width: 1400px) {
   .hero {
     background-size: cover;
