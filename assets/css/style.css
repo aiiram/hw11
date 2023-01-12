@@ -416,65 +416,120 @@ a {
 }
 
 .footer {
-
+  position: absolute;
   width: 1920px;
   height: 557px;
-
+  left: 0px;
+  top: 2722px;
+  background-color: var(--color-white);
 }
 
-.category {
-
-  width: 255px;
-  height: 253px;
-  left: 384px;
-  top: 2776px;
-
-
-}
+.category {}
 
 .container {}
 
-.category-title {
+.category_content {
+  display: flex;
+  flex-wrap: wrap;
 
-  width: 99px;
-  height: 40px;
+  gap: var(--gap);
+
+  padding: var(--gap-lg) 0;
+}
+
+.category-item {
+  /* display: flex;
+  flex-direction: column;
+ */
+  /* width: 255px;
+  height: 253px;
   left: 405px;
   top: 2782px;
 
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 140.62%;
-  /* or 22px */
+  margin-top: 60px; */
+
+  min-width: 255px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--gap);
+  padding: 25px 0;
+  flex: 1;
+  background-color: var(--color-white);
 
 
-  color: #000000;
+  margin-bottom: 1px;
+
+}
+
+
+
+.category-item__title {
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; */
+  display: block;
+  text-align: left;
+  width: 99px;
+  height: 48px;
+
+  font-size: 1rem;
+  line-height: var(--line-height-lg);
+  color: var(--color-black);
+
+  background-position: 60px 405px;
+
 
 
 }
 
-.category-titles {
+.line {
 
-
-  position: absolute;
-  width: 82px;
-  height: 158px;
+  width: 255px;
+  height: 0px;
   left: 405px;
-  top: 2877px;
+  top: 2852px;
 
-  font-family: 'Roboto';
+  /* Gray */
+
+  border: 1px solid #EFEFEF;
+
+  /* padding: 0;
+  height: 0;
+  border-bottom: 2px solid #000;
+  color: #c4c4c4; */
+
+}
+
+.category-item__titles {
+  padding: var(--gap-s) 0;
+  font-size: 0.75rem;
+  line-height: 2.33;
+  color: #828282;
+}
+
+.category-title__link {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+
+.category-title {
+  display: flex;
+  flex-wrap: wrap;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 28px;
-
-
-  color: #828282;
-
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
 }
 
-.category-title__link {}
+.category-titles {}
+
+
+
+
 
 
 @media (max-width: 1400px) {
