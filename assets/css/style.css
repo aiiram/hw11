@@ -119,6 +119,8 @@ a {
 .logo__link {
   display: flex;
   justify-content: center;
+  text-align: center;
+  align-items: center;
   gap: var(--gap);
 }
 
@@ -406,16 +408,21 @@ a {
   border-bottom: 1px solid var(--color-light);
 }
 
-.logo-link {
+.logo-contacts__link {
   display: flex;
   justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: var(--gap-xl);
   background: var(--color-white);
 }
 
 .logo-contact {
-  width: var(--gap-xl);
-  height: var(--gap-lg);
-  background: var(--color-white);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: var(--gap);
 }
 
 .feedback {
@@ -426,20 +433,40 @@ a {
   padding: 25px 0 var(--gap-xl);
 }
 
+.contact {
+  background-color: var(--color-white);
+  padding: var(--gap) 0;
+  margin-bottom: 1px;
+}
+
+.contact__media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap)
+}
+
 .footers-info {
   height: 64px;
   background-color: var(--color-light);
 }
 
-.footers-title {
+.footers-info__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap);
+}
+
+.bestshop__title,
+.confident__title {
   font-size: 0.75rem;
   line-height: var(--line-height-sm);
   color: var(--color-grey);
   padding: var(--gap-lg) 0;
-
 }
 
-.footers-confident {
+.confident {
   padding: 0 25px;
 }
 
